@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100% !important;
+}
+
+
+:root {
+    --primary-main: #2f69f0;
+    --primary-secondary: #f0692f;
+    --secondary-light: #4882ff;
+    --secondary-dark: #1c54e1;
+    --complementary-main: #2f69f0;
+    --complementary-secondary: #f0692f;
+}
+
+.banner {
+    background-color: var(--primary-main);
+    color: #f7f7f7;
+}
+
+.banner>div a {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #000;
+    color: white;
+    padding: 12px 14px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s;
+    margin-right: 12px;
+}
+
+.banner>div a:hover {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.banner>div a {
+    background: linear-gradient(227deg, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+}
+
+.banner>div a[href*="whatsapp"] {
+    background: linear-gradient(45deg, #25D366, #0084B4, #515BD4);
+}
+
+.banner {
+    >nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #2f69f0;
+        color: #f0692f;
+        border-radius: 10px;
+
+
+    }
+}
+
+.banner>nav {
+    display: none;
+    max-width: 100vw;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+
+    >a {
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #f7f7f7;
+        transition: color .3s ease-in-out;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: text-shadow 0.5s;
+        line-height: 48px;
+    }
+
+    >a:hover {
+        color: #f0692f;
+    }
+
+}
+
+.banner>div p {
+    color: #f7f7f7 !important;
+    margin-bottom: 32px;
+    font-size: 22px;
+}
+
+
+
+.banner>div {
+    display: grid;
+    grid-template-columns: var(--g, 1fr);
+    gap: 18px;
+    max-width: 100vw;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+.banner>div>div{
+    padding: 0 18px;
+}
+
+.banner>span {
+    display: grid;
+    grid-template-columns: var(--g, 1fr);
+    gap: 18px;
+    background-color: #202b4d;
+    padding: 18px;
+}
+
+.banner>span>p {
+    background-color: #0001;
+    border-radius: 18px;
+}
+
+.banner>span>p>strong {
+    display: block;
+    color: var(--complementary-secondary);
+    text-align: center;
+    font-size: 34px;
+    padding: 12px 0;
+}
+
+.banner>span>p>span {
+    display: block;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.banner h1 {
+    display: block;
+    font-size: 78px;
+    line-height: 78px;
+    color: #f7f7f7;
+    min-height: calc(2*78px);
+    margin-bottom: 32px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: text-shadow 0.5s;
+}
+
+.banner h1:hover {
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .banner div {
+        --g: repeat(2, 1fr)
+    }
+
+    .banner span {
+        --g: repeat(3, 1fr)
+    }
+    .banner>nav {
+        display: block;
+    }
+}
