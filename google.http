@@ -1,0 +1,5 @@
+# GET https://mybusiness.googleapis.com/v4/accounts/{accountId}/locations/{locationId}/reviews
+GET https://mybusiness.googleapis.com/v4/accounts/ChIJ-6ewNGBXzpQRDV38bzvaB84/locations/{locationId}/reviews
+
+###
+GET https://serpapi.com/search?engine=google_maps_reviews

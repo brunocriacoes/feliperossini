@@ -15,9 +15,40 @@
 
 <body>
 
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '877887796334271');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=877887796334271&ev=PageView&noscript=1" />
+    </noscript>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L67KZ4SBRR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-L67KZ4SBRR');
+    </script>
+
     <div>
         <section class="banner">
             <nav>
+                <a href="#">
+                    <img src="./assets/logo/logo.svg" alt="Felipe Rossini" class="logo">
+                </a>
                 <a href="#">Home</a>
                 <a href="#">Contato</a>
                 <a href="#">Bíblia do intestino</a>
@@ -45,13 +76,14 @@
                     </div>
                 </div>
                 <div>
-                    <!-- <img src="./assets/images/rossini.png" alt="rossini"> -->
-                    <div class="magic-bg">  
+                    <div class="magic-bg">
                         <img src="./assets/images/frossini.png" alt="Rossini">
                         <svg id="bg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="160%" hight="180%">
-                          <path fill="#FFF4" d="M44.4,-61.2C56.1,-52.5,63.2,-37.7,66.5,-22.7C69.9,-7.8,69.4,7.3,65.5,21.9C61.6,36.5,54.3,50.6,42.8,63.6C31.4,76.5,15.7,88.2,-1.1,89.7C-17.8,91.2,-35.6,82.4,-49.8,70.3C-64,58.3,-74.7,43,-81,25.8C-87.4,8.6,-89.5,-10.6,-82.5,-25.2C-75.6,-39.8,-59.6,-49.9,-44.3,-57.5C-29.1,-65,-14.5,-70,0.9,-71.3C16.3,-72.5,32.6,-69.9,44.4,-61.2Z" transform="translate(100 100)" />
+                            <path fill="#FFF4"
+                                d="M44.4,-61.2C56.1,-52.5,63.2,-37.7,66.5,-22.7C69.9,-7.8,69.4,7.3,65.5,21.9C61.6,36.5,54.3,50.6,42.8,63.6C31.4,76.5,15.7,88.2,-1.1,89.7C-17.8,91.2,-35.6,82.4,-49.8,70.3C-64,58.3,-74.7,43,-81,25.8C-87.4,8.6,-89.5,-10.6,-82.5,-25.2C-75.6,-39.8,-59.6,-49.9,-44.3,-57.5C-29.1,-65,-14.5,-70,0.9,-71.3C16.3,-72.5,32.6,-69.9,44.4,-61.2Z"
+                                transform="translate(100 100)" />
                         </svg>
-                      </div>
+                    </div>
                 </div>
             </div>
             <span>
@@ -75,6 +107,34 @@
                 </p>
             </span>
         </section>
+        <section class="about">
+            <div>
+
+                <img src="./assets/logo/box.svg" alt="Felipe Rossini">
+
+            </div>
+            <div>
+                <h2>Sobre</h2>
+                <p>
+                    <strong>Nutricionista</strong> formado pela universidade <strong>São Camilo</strong>, pós graduado
+                    pela <strong>VP Consultoria em Nutrição funcional</strong> e em <strong>Genômica
+                        Nutricional</strong>.
+                </p>
+
+                <p><strong>Apaixonado</strong> por uma <strong>nutrição integrativa</strong>, sempre buscou conhecimento
+                    e autodesenvolvimento.</p>
+
+                <p>Com mais de <strong>6.000 pacientes</strong> atendidos em seu consultório e todas as avaliações
+                    recebendo <strong>nota máxima</strong>, seu diferencial é a expertise em análises de exames de
+                    sangue para uma avaliação completa do paciente.</p>
+
+                <p>E quando não está trabalhando, pode ser encontrado no meio do mato, desfrutando de um café ou vinho
+                    na companhia de seu <strong>Pug, o Hulk</strong>.</p>
+            </div>
+        </section>
+        <footer>
+            &copy; Todos os direitos reservados - Felipe Rossini
+        </footer>
     </div>
     <script src="./main.js"></script>
 </body>
