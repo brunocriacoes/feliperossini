@@ -230,6 +230,13 @@ img {
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
+.loop_book {
+    display: grid;
+    grid-template-columns: var(--g, 1fr);
+    gap: 48px;
+    margin-top: 48px;
+}
+
 @keyframes modifyBezier {
     0% {
         d: path("M44.4,-61.2C56.1,-52.5,63.2,-37.7,66.5,-22.7C69.9,-7.8,69.4,7.3,65.5,21.9C61.6,36.5,54.3,50.6,42.8,63.6C31.4,76.5,15.7,88.2,-1.1,89.7C-17.8,91.2,-35.6,82.4,-49.8,70.3C-64,58.3,-74.7,43,-81,25.8C-87.4,8.6,-89.5,-10.6,-82.5,-25.2C-75.6,-39.8,-59.6,-49.9,-44.3,-57.5C-29.1,-65,-14.5,-70,0.9,-71.3C16.3,-72.5,32.6,-69.9,44.4,-61.2Z");
@@ -350,6 +357,46 @@ footer {
     font-size: 16px;
 }
 
+.book_card {
+    display: block;
+    padding: 22px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #FFF;
+    margin: 22px;
+}
+
+.book_card p {
+    display: block;
+    padding: 0 12px;
+}
+
+.book_card img {
+    display: block;
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.book_card a {
+    display: block;
+    padding: 12px 22px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: var(--primary-main);
+    color: #f1f1f1;
+    margin: 0 auto;
+    border-radius: 48px;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    margin-top: 22px;
+    font-weight: bold;
+}
+.book_card a:hover {
+    background-color: var(--secondary-dark);
+}
+
 .sigame {
     display: block;
     line-height: 32px;
@@ -404,5 +451,8 @@ footer {
 
     .insta>div>div {
         --g: 48px 1fr 80px;
+    }
+    .loop_book  {
+        --g: 1fr 1fr;
     }
 }
