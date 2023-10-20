@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: var(--tweight, 900);
+    line-height: 1.2em;
+    color: var(--tcolor, #FFF);
+}
+
+.thighlight {
+    --tcolor: #F60000;
+    --tweight: 700;
+}
+
+p {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+body>div>section {
+    width: 100%;
+    padding: 3.5em 0;
+}
+
+body>div>section>div {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.cols-2 {
+    display: grid;
+    grid-template-columns: var(--c, 1fr);
+    gap: 22px;
+    align-items: center;   
+}
+
+.q-cols-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;   
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.bottom-space {
+    margin-bottom: 20px;
+}
+
+.bg-sec-1 {
+    background-color: #001504;
+}
+
+.bg-sec-2 {
+    background-image: linear-gradient(250deg, #000000 0%, var(--bgcolor, #F60C0C) 100%);
+}
+
+.bg-sec-3 {
+    background-image: url(../images/banner-ebook-biblia-2.png);
+    background-position: left;
+    background-repeat: no-repeat;    
+}
+
+.q-slider {
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 90%;    
+    width: 600px;
+}
+
+.q-card {
+    display: block;    
+    background-color: #FFF;
+    border-radius: 4px;   
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px;
+}
+
+.q {
+    padding: 10px;
+}
+
+.q label {
+    display: inline-block;
+    width: 98%;
+    line-height: 48px;    
+    align-items: center; 
+    padding: 0 0 0 8px;
+    text-align: left;
+    margin: 0 0 6px 0;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+}
+
+.q-title {
+    color: #EF1515;
+    font-weight: 900;
+}
+
+.q-question {
+    color: #EF1515;
+}
+
+.q-btn {    
+    display: inline-block;
+    width: 80%;
+    background-color: #000000;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.q-bar::before {
+    content: '.';
+}
+
+.q-bar {
+    display: block;
+    width: 40%;
+    background-color: #1051b9;
+    border-radius: 5px;
+    color: transparent;
+    line-height: 0.5em;
+}
+
+
+@media (min-width: 768px) {
+    .cols-2 {
+        --c: repeat(2, 1fr);
+    }
+
+    body>div {
+        padding: 0;
+    }
+
+    body>div>section>div {
+        max-width: 1600px;
+    }
+
+    body>div>section {
+        width: 100%;
+        padding: 80px;
+    }
+
+    h2 {
+        font-size: 4em;
+        line-height: 1;
+    }
+    .bg-sec-3 {
+        background-image: url(../images/top-bg-1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+    }
+}
