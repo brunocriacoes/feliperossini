@@ -108,7 +108,8 @@ video {
 }
 
 .bg-black {
-    background-color: #000000;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #131313 0%, #000000 100%);
 }
 
 .bg-white {
@@ -182,16 +183,45 @@ details p {
 .reviews {
     padding: 48px;
 }
-.reviews > h2{
+
+.reviews>h2 {
     display: block;
     text-align: center;
     font-size: 34px;
     color: #333;
 }
-.reviews > p{
+
+.reviews>p {
     display: block;
     text-align: center;
     color: #777;
+}
+
+.tarja {
+    display: inline-block;
+    background-color: #f60000;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+s {
+    color: #f60000;
+    font-weight: bolder;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+
+    >span {
+        font-size: 36px;
+        padding-top: 18px;
+    }
+
+    >b {
+        font-size: 150px;
+        line-height: 150px;
+    }
 }
 
 .slider_crop {
@@ -212,17 +242,20 @@ details p {
     transition: margin-left .3s ease-in-out;
     margin-left: var(--ml, 0px);
 }
+
 .slider {
     display: grid;
     grid-template-columns: 48px 1fr 48px;
     align-items: center;
     margin: 48px 0;
 }
-.slider > span {
+
+.slider>span {
     display: block;
     text-align: center;
     cursor: pointer;
 }
+
 .slider_card {
     display: block;
     background-color: #f1f1f1;
@@ -230,17 +263,20 @@ details p {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
-.slider_card > div {
+
+.slider_card>div {
     display: grid;
     grid-template-columns: 48px 1fr;
     gap: 22px;
     align-items: center;
     margin-bottom: 22px;
 }
-.slider_card > div strong {
+
+.slider_card>div strong {
     display: block;
 }
-.slider_card > div i {
+
+.slider_card>div i {
     color: #add325;
 }
 
@@ -283,6 +319,7 @@ details p {
     details p {
         font-size: 16px;
     }
+
     .title {
         font-size: 36px;
     }
