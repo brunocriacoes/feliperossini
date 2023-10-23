@@ -81,12 +81,20 @@ body>div>section>div {
     background-repeat: no-repeat;    
 }
 
-.q-slider {
-    display: flex;
+.q-container>div {
     overflow: hidden;
     margin: 0 auto;
     max-width: 90%;    
     width: 600px;
+    background-color: #FFF;
+}
+
+.q-slider {
+    --ml: 0;
+    position: relative;
+    display: flex;
+    transition: left .3s ease-in-out;
+    left: var(--ml, 0);
 }
 
 .q-card {
