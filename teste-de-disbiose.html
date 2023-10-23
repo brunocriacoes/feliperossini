@@ -55,7 +55,7 @@
                     <div>
 
                         <a data-quiz="Q2524YA64" data-type="4" href="javascript:var i=document.getElementById(&#39;quiz-embed-0&#39;);try{qz.startQuiz(i)}catch(e){i.start=1;i.style.cursor=&#39;wait&#39;;i.style.opacity=&#39;0.5&#39;};void(0);" id="quiz-embed-0" style="display: inline;"></a><script>(function(i,s,o,g,r,a,m){var ql=document.querySelectorAll('A[quiz],DIV[quiz],A[data-quiz],DIV[data-quiz]'); if(ql){if(ql.length){for(var k=0;k<ql.length;k++){ql[k].id='quiz-embed-'+k;ql[k].href="javascript:var i=document.getElementById('quiz-embed-"+k+"');try{qz.startQuiz(i)}catch(e){i.start=1;i.style.cursor='wait';i.style.opacity='0.5'};void(0);"}}};i['QP']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://take.quiz-maker.com/3012/CDN/quiz-embed-v1.js','qp');</script>
-                        
+
                     </div>
                 </div>
             </div>
@@ -64,79 +64,6 @@
 
         </footer>
     </div>
-
-    <script>
-
-
-
-/* 
-        var html = '<table style="width:500px; border:1px solid #ccc">';
-        html += '<tbody>';
-            for(let i = 0; i < 10; i++){
-                html += '<tr>';
-                    html += '<td style="width:100px;border:1px solid #CCC;">';
-                        html += '<span>teste '+(i+1)+'</span>';
-                    html += '</td>';
-                    html += '<td style="border:1px solid #CCC;">';
-                        html += '<span>texto '+(i+1)+'</span>';
-                    html += '</td>';
-                html += '</tr>';
-            }
-        html += '</tbody>';
-        html += '</table>';
-
-        document.body.innerHTML += html;
- */
-
-var palco = document.querySelector('.q-slider')
-            
-
-/* palco.innerHTML = '<h1>CAGUEEEEEEEEEEI</h1>' */
-
-
-
-
-
-
-        _ml = palco.style.getPropertyValue('--ml');
-        console.log(_ml)
-        _btns = document.querySelectorAll('.q-card')
-        _btns = _btns.length - 1       
-        console.log(_btns)
-
-        _where = 0;
-
-        function cardPosition() {
-            if (_where == 0) {
-                console.log('primeiro card')
-            }
-            if (_where == _btns) {
-                console.log('ultimo card')
-            }
-        }
-
-        cardPosition()
-
-        function next() {
-            var palco = document.querySelector('.q-slider')
-            _ml = _ml - 100;
-            palco.style.setProperty('--ml', _ml + "%");
-
-            _where++
-            //alert(_ml)
-            cardPosition()
-        }
-
-        function prev() {
-            var palco = document.querySelector('.q-slider')
-            _ml = _ml + 100;
-            palco.style.setProperty('--ml', _ml + "%");
-
-            _where--
-            //alert(_ml)
-            cardPosition()
-        }
-    </script>
 
 </body>
 
