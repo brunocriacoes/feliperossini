@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.cols-2 {
+    display: grid;
+    grid-template-columns: var(--c, 1fr);
+    gap: 22px;
+    align-items: center;
+}
+
+section>div {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: black;
+}
+
+footer>div {
+    max-width: 1050px;
+    margin: 0 auto; 
+}
+
+.bg-sec-1 {
+    background-image: url(../images/receitas/banner-mobile-5-receitas.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    min-height: 1203px;
+}
+
+.bg-sec-2 {
+    background-image: url(../images/receitas/fundo-tarja-2.jpg);
+    background-size: cover;      
+    background-repeat: no-repeat;
+    min-height: 430px;
+}
+
+.bg-sec-3 {
+    background-image: url(../images/receitas/mibue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 385px;
+}
+
+.bg-sec-4 {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #67EFA3 0%, #48775D 100%);
+    min-height: 192px;
+}
+
+.bg-sec-5 {
+    background-color: transparent;
+    background-image: radial-gradient(at center center, #67EFA3 0%, #15241C 100%);
+}
+
+.bg-sec-6 {
+    border-left: 0 solid;
+    border-right: 1200px #67EFA3 solid;
+    border-bottom: 2em #15241C solid;
+    border-top: 0 solid;
+    min-height: 2em;
+}
+
+.bg-sec-7 {
+    background-color: #15241C;
+}
+
+@media (min-width: 768px) {
+    .cols-2 {
+        --c: repeat(2, 1fr);
+    }
+}
