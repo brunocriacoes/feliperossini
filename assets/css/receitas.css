@@ -88,8 +88,66 @@ footer>div {
     background-color: #15241C;
 }
 
+.chief-cards>div {
+    border: 1px #999 solid;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 3px #0002, 7px 7px 10px #0002, -7px -7px 20px #0002;
+}
+
+.chief-cards>div>span {
+    display: inline-block;
+    text-align: center;
+    font-weight: bolder;
+    color: #48775d;
+    font-size: x-large;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.chief-cards>div>span:last-child {
+    display: block;
+    font-size: medium;
+    margin: 30px auto 0 auto;
+    color: #FFF;
+    font-weight: bold;
+    width: fit-content;
+    background-color: #48775d;
+}
+
+
+.chief-cards>div>p {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.chief-cards>div>img {
+    position: relative;
+    display: block;
+    width: 120px;
+    margin: -50px auto 0 auto;
+}
+
 @media (min-width: 768px) {
     .cols-2 {
         --c: repeat(2, 1fr);
     }
+    .bg-sec-1 {
+        background-image: url(../images/receitas/banner-principal-3a.jpg);
+        min-height: 870px;
+    }
+    .bg-sec-2 {
+        background-image: url(../images/receitas/fundo-tarja-2.jpg);
+        min-height: 430px;
+    }
+    .bg-sec-3 {
+        background-image: url(../images/receitas/banner-principal-5a-2.jpg);
+        min-height: 571px;
+    }
+
 }
