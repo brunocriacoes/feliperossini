@@ -32,6 +32,14 @@ img {
     margin-top: 3em;
 }
 
+.zero-padding {
+    padding: 0;
+}
+
+.padding-border {
+    padding: 0 10px;
+}
+
 .fa-circle-check {
     color: #48775d;
     font-size: 24px;
@@ -47,7 +55,7 @@ img {
 section>div {
     max-width: 1050px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 footer {
@@ -78,6 +86,7 @@ footer>div {
 
 .bg-sec-3 {
     background-image: url(../images/receitas/mibue.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 385px;
@@ -232,9 +241,16 @@ h2 {
         min-height: 430px;
     }
 
-    .bg-sec-3 {
+    .bg-sec-3-a {
         background-image: url(../images/receitas/banner-principal-5a-2.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .bg-sec-3 {   
+        background-image: none;     
         min-height: 571px;
+        min-width: 580px;
     }
 
     h1 {
