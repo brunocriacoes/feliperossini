@@ -25,11 +25,11 @@ img {
 }
 
 .bottom-space {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .top-space {
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 .zero-padding {
@@ -174,7 +174,14 @@ p {
     color: #333;
     font-family: "Hammersmith One", Sans-serif;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 600;    
+}
+
+p>strong {
+    background-color: #e41f18;
+    color: #FFF;
+    padding: 3px 10px;
+    line-height: 1.6em;
 }
 
 a {
