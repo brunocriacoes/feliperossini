@@ -52,6 +52,10 @@ img {
     align-items: center;
 }
 
+section {
+    max-width: 1440px;
+}
+
 section>div {
     max-width: 1050px;
     margin: 0 auto;
@@ -60,6 +64,7 @@ section>div {
 
 footer {
     background-color: black;
+    max-width: 1440px;
 }
 
 footer>div {
@@ -103,6 +108,7 @@ footer>div {
 .bg-sec-5 {
     background-color: transparent;
     background-image: radial-gradient(at center center, #67EFA3 0%, #15241C 100%);
+    padding-top: 4em;
 }
 
 .bg-sec-6 {
@@ -111,6 +117,7 @@ footer>div {
     border-bottom: 2em #15241C solid;
     border-top: 0 solid;
     min-height: 2em;
+    max-width: 1440px;
 }
 
 .bg-sec-7 {
@@ -175,7 +182,7 @@ p {
     color: #333;
     font-family: "Hammersmith One", Sans-serif;
     font-size: 18px;
-    font-weight: 600;    
+    font-weight: 400;    
 }
 
 p>strong {
@@ -189,7 +196,7 @@ a {
     display: inline-block;
     margin: 0 auto;
     font-family: "Hammersmith One", Sans-serif;
-    font-size: 24px;
+    font-size: var(--abtn, 24px);
     font-weight: bold;
     background-color: black;
     background-image: linear-gradient(180deg, #67EFA3 0%, #48775D 100%);
@@ -204,6 +211,14 @@ a {
     color: #FFF;
     line-height: 16px; 
     margin-bottom: 2em;       
+}
+
+.a-long-text {
+    --abtn: 18px;
+}
+
+.a-long-text-2 {
+    --abtn: 14px;
 }
 
 h2 {
@@ -234,7 +249,7 @@ h2 {
 
 @media (min-width: 768px) {
     img {
-        max-width: 100%;
+        max-width: 80%;
     }
 
     .cols-2 {
@@ -244,6 +259,68 @@ h2 {
     .bg-sec-1 {
         background-image: url(../images/receitas/banner-principal-3a.jpg);
         min-height: 870px;
+    }
+
+    .bg-sec-2 {
+        background-image: url(../images/receitas/fundo-tarja-2.jpg);
+        min-height: 430px;
+    }
+
+    .bg-sec-3-a {
+        background-image: url(../images/receitas/banner-principal-5a-2.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .bg-sec-3 {   
+        background-image: none;     
+        min-height: 571px;
+        min-width: 580px;
+    }
+
+    h1 {
+        color: #000000;
+        font-family: "Hammersmith One", Sans-serif;
+        font-size: 48px;
+        font-weight: 600;
+        padding: 8px 8px 8px 0;
+    }
+
+    p {
+        color: #333;
+        font-family: "Hammersmith One", Sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .h2-c-2 {
+        font-size: 60px;
+    }
+
+    .l-itens {
+        --c: 1em 1fr;        
+    }
+
+    a {
+        font-size: 28px;
+        line-height: 12px;
+        margin-bottom: 1em;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    img {
+        max-width: 100%;
+    }
+
+    .cols-2 {
+        --c: repeat(2, 1fr);
+    }
+
+    .bg-sec-1 {
+        background-image: url(../images/receitas/banner-principal-3a.jpg);
+        min-height: 920px;
     }
 
     .bg-sec-2 {
