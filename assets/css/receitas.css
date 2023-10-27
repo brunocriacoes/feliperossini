@@ -28,6 +28,10 @@ img {
     margin-bottom: 2em;
 }
 
+.bottom-space-thin {
+    margin-bottom: 1em;
+}
+
 .top-space {
     margin-top: 2em;
 }
@@ -38,6 +42,14 @@ img {
 
 .padding-border {
     padding: 0 10px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bolder;
 }
 
 .fa-circle-check {
@@ -240,6 +252,25 @@ h2 {
 
 .h2-c-3 {
     --c-subtitle: #48775D;
+}
+
+h3 {
+    color: #FFF;
+    font-weight: 300;
+}
+
+.price {
+    font-size: 64px;
+    color: #FFF;
+}
+
+.price>span {
+    font-size: 0.5em;
+    vertical-align: top;      
+}
+
+.price>b {
+    font-size: 1.6em;
 }
 
 .l-itens {
