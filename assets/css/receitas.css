@@ -57,6 +57,16 @@ img {
     font-size: 24px;
 }
 
+.fa-hand-pointer {
+    display: block;
+    z-index: -1;
+    color: #FFF;
+    opacity: 80%;
+    rotate: 30deg;
+    text-align: right;
+    width: 30%;
+}
+
 .cols-2 {
     display: grid;
     grid-template-columns: var(--c, 1fr);
@@ -197,7 +207,7 @@ p {
     color: #333;
     font-family: "Hammersmith One", Sans-serif;
     font-size: 18px;
-    font-weight: 400;    
+    font-weight: 400;
 }
 
 .p-cut {
@@ -253,12 +263,12 @@ a {
     border-color: #67EFA3A3;
     border-radius: 50px 50px 50px 50px;
     box-shadow: 0px 0px 24px 0px #67EFA3;
-    padding: 0.8em 48px 0.9em;    
+    padding: 0.8em 48px 0.9em;
     text-decoration: none;
     text-align: center;
     color: #FFF;
-    line-height: 16px; 
-    margin-bottom: 2em;       
+    line-height: 16px;
+    margin-bottom: 2em;
 }
 
 .a-long-text {
@@ -302,7 +312,7 @@ h3 {
 
 .price>span {
     font-size: 0.5em;
-    vertical-align: top;      
+    vertical-align: top;
 }
 
 .price>b {
@@ -313,6 +323,48 @@ h3 {
     --c: 1em 1fr;
     align-items: center;
 }
+
+.bis-card {
+    padding: 0 0 3em 0;
+}
+
+.bis-card img {
+    display: block;
+    width: 200px;
+    margin: 2em auto 0 auto;
+}
+
+.bis-card h3 {
+    text-align: center;
+    color: #111;
+    font-family: "Hammersmith One", Sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    margin: 2em 0 1em;
+}
+
+.bis-card span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-family: "Hammersmith One", Sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0 auto 2em;
+}
+
+.bis-card p {
+    color: #48775D;
+    font-family: "Hammersmith One", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3em;
+    -webkit-text-stroke-color: #000;
+    stroke: #000;
+    text-align: center;
+}
+
 
 @media (min-width: 768px) {
     img {
@@ -343,8 +395,8 @@ h3 {
         background-repeat: no-repeat;
     }
 
-    .bg-sec-3 {   
-        background-image: none;     
+    .bg-sec-3 {
+        background-image: none;
         min-height: 571px;
         min-width: 580px;
     }
@@ -369,7 +421,7 @@ h3 {
     }
 
     .l-itens {
-        --c: 1em 1fr;        
+        --c: 1em 1fr;
     }
 
     a {
@@ -415,8 +467,8 @@ h3 {
         background-repeat: no-repeat;
     }
 
-    .bg-sec-3 {   
-        background-image: none;     
+    .bg-sec-3 {
+        background-image: none;
         min-height: 571px;
         min-width: 580px;
     }
@@ -441,7 +493,7 @@ h3 {
     }
 
     .l-itens {
-        --c: 1em 1fr;        
+        --c: 1em 1fr;
     }
 
     a {
