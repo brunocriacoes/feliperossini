@@ -64,9 +64,10 @@ img {
     align-items: center;
 }
 
-section {
+/* section {
     max-width: 1440px;
-}
+    margin: 0 auto;
+} */
 
 section>div {
     max-width: 1050px;
@@ -76,7 +77,7 @@ section>div {
 
 footer {
     background-color: black;
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
 
 footer>div {
@@ -129,7 +130,7 @@ footer>div {
     border-bottom: 2em #15241C solid;
     border-top: 0 solid;
     min-height: 2em;
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
 
 .bg-sec-7 {
@@ -195,6 +196,20 @@ p {
     font-family: "Hammersmith One", Sans-serif;
     font-size: 18px;
     font-weight: 400;    
+}
+
+.p-cut {
+    color: #e41f18;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.p-cond {
+    color: #FFF;
+}
+
+.p-cut>span:last-child {
+    color: #FFF;
 }
 
 p>strong {
