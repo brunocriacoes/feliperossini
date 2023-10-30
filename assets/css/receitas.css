@@ -64,10 +64,12 @@ img {
     align-items: center;
 }
 
-/* section {
-    max-width: 1440px;
-    margin: 0 auto;
-} */
+.cols-2-m {
+    display: grid;
+    grid-template-columns: var(--c, 1fr);
+    gap: 22px;
+    align-items: center;
+}
 
 section>div {
     max-width: 1050px;
@@ -212,6 +214,25 @@ p {
     color: #FFF;
 }
 
+small {
+    display: block;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #FFF;
+    padding: 0 1em 1em 1em;
+    font-weight: bold;
+}
+
+.seal img {
+    width: 40%;
+    margin: 2em auto;
+}
+
+.seal p {
+    font-size: 14px;
+    padding: 0 1em 3em 1em;
+}
+
 p>strong {
     background-color: #e41f18;
     color: #FFF;
@@ -302,6 +323,10 @@ h3 {
         --c: repeat(2, 1fr);
     }
 
+    .cols-2-m {
+        --c: 260px 1fr
+    }
+
     .bg-sec-1 {
         background-image: url(../images/receitas/banner-principal-3a.jpg);
         min-height: 870px;
@@ -351,6 +376,16 @@ h3 {
         font-size: 28px;
         line-height: 12px;
         margin-bottom: 1em;
+    }
+
+    .seal img {
+        width: 80%;
+        margin: 2em;
+    }
+
+    .seal p {
+        font-size: 24px;
+        padding: 0;
     }
 
 }
