@@ -366,6 +366,41 @@ h3 {
     padding: 0 2em;
 }
 
+.faq h2 {
+    padding: 1em 0;
+}
+
+.faq details {
+    color: #FFF;
+    margin: 0 0 1em 2em;
+}
+
+.faq summary {
+    margin: 0 0 1em 0;
+}
+
+.faq>div>details>p {
+    color: #F1F1F1CC;
+    font-size: 14px;
+    margin-left: 1em;
+}
+
+.faq>div>p {
+    color: #FFFC;
+    font-size: 12px;
+    text-align: center;
+    margin: 2em 2em 5em 2em;
+}
+
+.faq>div>p>strong {
+    background-color: #0000;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+}
+
 
 @media (min-width: 768px) {
     img {
