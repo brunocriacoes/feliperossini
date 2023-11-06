@@ -280,6 +280,11 @@ s {
     color: #add325;
 }
 
+.cx-1000 {
+    width: 1000px;
+    max-width: calc(100vw - 100px);
+    padding: 0;
+}
 
 @media (max-width: 576px) {
     .image-title {

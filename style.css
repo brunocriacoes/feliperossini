@@ -44,7 +44,6 @@ img {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-
 .banner>div a {
     background: linear-gradient(227deg, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
 }
@@ -275,10 +274,12 @@ img {
     overflow: hidden;
     transition: all .3s ease-in-out;
 }
+
 #is_open_menu {
     display: none;
 }
-#is_open_menu:checked ~ .mobile_link {
+
+#is_open_menu:checked~.mobile_link {
     max-height: 1000px !important;
 }
 
@@ -496,6 +497,7 @@ footer {
     .mobile_content {
         display: none;
     }
+
     .about,
     .banner div {
         --g: repeat(2, 1fr)

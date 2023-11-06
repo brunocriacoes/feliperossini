@@ -23,7 +23,7 @@ body {
 }
 
 .title {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     color: var(--cor, #990f0f);
 }
@@ -67,7 +67,7 @@ p {
 a {
     display: inline-block;
     font-family: "Roboto", Sans-serif;
-    font-size: 33px;
+    font-size: 24px;
     font-weight: 500;
     background-color: transparent;
     background-image: linear-gradient(53deg, #f90c0c 29%, #990f0f 100%);
@@ -114,13 +114,14 @@ video {
     background-position: center top;
     background-size: cover;
     background-image: var(--url, url(../images/keto/layout-keto-2_05.png));
-    padding: 48px;
+    padding: 48px 0;
 }
 
 .bg-2 {
     --url: url(../images/keto/layout-keto-2_32.png)
 }
-.bg-3 {    
+
+.bg-3 {
     --url: url(../images/keto/layout-keto-2_16-2.png)
 }
 
@@ -131,10 +132,10 @@ video {
 summary {
     width: 100%;
     border-bottom: 1px solid #f7f7f7;
-    line-height: 58px;
-    font-size: 15px;
+    padding: 16px;
+    font-size: 13px;
     background-color: #990f0f;
-    --cor:#f7f7f7;
+    --cor: #f7f7f7;
     padding-left: 16px;
 }
 
@@ -200,7 +201,7 @@ details p {
 }
 
 s {
-    color: var(--cor,#f60000);
+    color: var(--cor, #f60000);
     font-weight: bolder;
 }
 
@@ -210,10 +211,12 @@ s {
     width: 500px;
     margin: 0 auto;
     max-width: 100%;
+
     >p {
         margin: 16px;
     }
 }
+
 .atencao_box {
     display: block;
     border: 1px solid #f60000;
@@ -222,6 +225,7 @@ s {
     max-width: 100%;
     background-image: linear-gradient(180deg, #f90c0c 0%, #990f0f 100%);
     --cor: #f7f7f7;
+
     >p>strong {
         font-size: 32px;
     }
@@ -321,13 +325,19 @@ s {
 
 .desfrute {
     display: grid;
-    grid-template-columns: 78px 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
     gap: 16px;
 
     >div>p>strong {
         font-size: 24px;
     }
+
+}
+
+.desfrute img {
+    display: block;
+    margin: 0 auto;
 }
 
 @media (min-width: 576px) {}
@@ -364,6 +374,14 @@ s {
 
     .text-big {
         font-size: 24px;
+    }
+
+    a {
+        font-size: 33px;
+    }
+
+    .desfrute {
+        grid-template-columns: 78px 1fr;
     }
 
 }
