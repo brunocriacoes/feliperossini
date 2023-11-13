@@ -31,7 +31,7 @@ function efeitoDigitacao(elemento, texto, velocidade) {
 	}, velocidade);
 }
 
-efeitoDigitacao(document.querySelector('.js-digital'), 'Felipe Rossini', 200)
+// efeitoDigitacao(document.querySelector('.js-digital'), 'Felipe Rossini', 200)
 
 
 async function getReviews() {
