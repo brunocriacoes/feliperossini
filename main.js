@@ -79,6 +79,7 @@ function renderItem({ reviewer_name, reviewer_picture_url, text, url }) {
 		breakPoints: {
 			0: 1,
 			420: 2,
+			768: 3,
 		}
 		,
 		autoPlay: true,

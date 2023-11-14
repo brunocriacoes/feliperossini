@@ -53,7 +53,7 @@ img {
 
 .container {
     display: block;
-    width: 1200px;
+    width: auto;
     max-width: 100vw;
     margin: 0 auto;
 }
@@ -130,6 +130,12 @@ img {
     padding: 48px 0;
 }
 
+.cols-3 {
+    display: grid;
+    grid-template-columns: var(--c, 1fr);
+    gap: 22px;    
+}
+
 .banner {
     >nav {
         display: flex;
@@ -198,6 +204,13 @@ img {
 .banner>span>p {
     background-color: #0001;
     border-radius: 18px;
+}
+
+.corpright {
+    text-align: center;
+    font-size: 0.7em;
+    margin-top: 48px;
+    padding-bottom: 1em;
 }
 
 .banner>span>p>strong {
@@ -348,6 +361,12 @@ path {
     /* filter: grayscale(1) invert(1) brightness(2); */
 }
 
+.logo-footer {
+    display: block;
+    filter: invert(1) brightness(10000);
+    margin: 0 auto;
+}
+
 .about {
     display: grid;
     grid-template-columns: var(1fr);
@@ -380,14 +399,37 @@ path {
 }
 
 footer {
-    display: flex;
+    display: block;
     justify-content: center;
-    width: 100%;
-    line-height: 48px;
-    background-color: #f7f7f7;
+    width: 100%;    
+    background-color: #202b4d;
     border-top: 1px solid #EEE;
-    color: #777;
+    color: #FFF;
     font-size: 14px;
+    padding: 48px;
+    padding-bottom: 0;
+}
+
+footer p {
+    margin-top: 22px;
+    text-align: center;    
+}
+
+footer h4 {
+    margin-bottom: 22px;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 2em;
+}
+
+.social a {
+    display: inline-block;
+    padding-right: 12px;
+    font-size: 1.5em;
 }
 
 .insta {
@@ -535,5 +577,12 @@ footer {
 
     .slider_card>div {        
         grid-template-columns: 48px 1fr 48px;
+    }
+
+    .cols-3 {
+        --c: repeat(3, 1fr);
+    }
+    .container {
+        width: 1200px;
     }
 }
