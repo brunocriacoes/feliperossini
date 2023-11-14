@@ -1,3 +1,5 @@
+import Slider from './assets/js/Slider.js'
+
 function efeitoDigital(elemento) {
 	let numero = 0;
 	let intervalo = setInterval(() => {
@@ -34,18 +36,10 @@ function efeitoDigitacao(elemento, texto, velocidade) {
 // efeitoDigitacao(document.querySelector('.js-digital'), 'Felipe Rossini', 200)
 
 
-async function getReviews() {
-	var placeId = 'ChIJx10QDzL2zpQROVoah2YT61I'
-	var path = `https://service-reviews-ultimate.elfsight.com/data/reviews?uris%5B%5D=${placeId}&with_text_only=1&min_rating=5&page_length=100&order=date`
-	var data = await (await fetch(path)).json()
-	var palco = document.querySelector('.js-reviews')
-	var largura = palco.clientWidth / 2 - 52
-	if (palco) {
-		for (let i = 0; i < 13; i++) {
-			let { reviewer_name, reviewer_picture_url, text, url } = data.result.data[i]
-			let html = `
+function renderItem({ reviewer_name, reviewer_picture_url, text, url }) {
+	return `
 			<div class="slider_card" >
-				<div style="width: ${largura}px">
+				<div>
 					<div>
 						<img src="${reviewer_picture_url}" alt="${reviewer_name}">
 					</div>
@@ -66,29 +60,32 @@ async function getReviews() {
 					</div>
 				</div>
 				<p>${text}</p>
-			</div>
-			`
-			palco.innerHTML += html
+			</div>`
+}
+
+; (async _ => {
+	var placeId = 'ChIJx10QDzL2zpQROVoah2YT61I'
+	var path = `https://service-reviews-ultimate.elfsight.com/data/reviews?uris%5B%5D=${placeId}&with_text_only=1&min_rating=5&page_length=100&order=date`
+	var data = await (await fetch(path)).json()
+	var textLimit = data.result.data.filter(e => e.text.length > 100 && e.text.length < 200)
+
+	const options = {
+		btnNext: [document.querySelector('.js-next')],
+		btnPrev: [document.querySelector('.js-prev')],
+		steps: [document.querySelector('.js-steps')],
+		gap: 20,
+		data: textLimit,
+		item: renderItem,
+		breakPoints: {
+			0: 1,
+			420: 2,
 		}
+		,
+		autoPlay: true,
+		delay: 3000
 	}
+	const $slider = document.querySelector('.js-slider-loop')
 
-}
+	const sl = new Slider($slider, options)
 
-getReviews()
-
-var _ml = document.querySelector('.slider_loop').clientWidth + 24
-
-function next() {
-	var palco = document.querySelector('.slider_loop')
-	var largura = _ml * -1
-	var position_now = +palco.style.getPropertyValue('--ml').replace('px', '')
-	palco.style.setProperty('--ml', (largura + position_now) + "px");
-
-}
-
-function prev() {
-	var palco = document.querySelector('.slider_loop')
-	var largura = _ml
-	var position_now = +palco.style.getPropertyValue('--ml').replace('px', '')
-	palco.style.setProperty('--ml', (largura + position_now) + "px");
-}
+})()

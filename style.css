@@ -58,10 +58,6 @@ img {
     margin: 0 auto;
 }
 
-.reviews {
-    padding: 48px;
-}
-
 .reviews>h2 {
     display: block;
     text-align: center;
@@ -92,13 +88,16 @@ img {
     display: block;
     background-color: #f1f1f1;
     padding: 22px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1); */
     border-radius: 8px;
+    border: 1px #DDD solid;
+    width: 100%;    
+    box-sizing: border-box;    
 }
 
 .slider_card>div {
     display: grid;
-    grid-template-columns: 48px 1fr 48px;
+    grid-template-columns: 20px 1fr 20px;
     gap: 22px;
     align-items: center;
     margin-bottom: 22px;
@@ -125,6 +124,10 @@ img {
     font-size: 32px;
     text-align: center;
     color: #333;
+}
+
+.reviews {
+    padding: 48px 0;
 }
 
 .banner {
@@ -212,8 +215,7 @@ img {
 }
 
 .slider_crop {
-    overflow-x: hidden;
-    padding: 12px;
+    overflow-x: hidden;    
 }
 
 .slider_loop {
@@ -529,5 +531,9 @@ footer {
 
     .loop_book {
         --g: 1fr 1fr 1fr;
+    }
+
+    .slider_card>div {        
+        grid-template-columns: 48px 1fr 48px;
     }
 }
