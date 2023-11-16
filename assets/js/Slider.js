@@ -40,11 +40,11 @@ export default class Slider {
         this.strip.style.position = 'relative'
         this.strip.style.right = 'var(--move, 0px)'
         this.strip.style.transition = 'right .3s ease-in-out'
-        this.strip.style.width = Math.floor(this.slideWidthIten * this.options.data.length) + 'px'
+        this.strip.style.width = Math.floor(this.slideWidthIten * this.options.data.length) + 'px'        
     }
 
     getDimentions() {
-        this.slideWidthIten = Math.floor(this.stage.offsetWidth / this.chunks) + (this.gap / this.chunks)             
+        this.slideWidthIten = Math.floor(this.stage.offsetWidth / this.chunks) + Math.floor(this.gap / this.chunks)        
         this.slideWidth = this.slideWidthIten * this.chunks
     }
 
@@ -165,10 +165,12 @@ export default class Slider {
 
     createStepsButtons() {
         this.options.steps.forEach(buttosItens => {
-            var stepsButtons = Array.from(buttosItens.querySelectorAll('span'))
-            stepsButtons.forEach(button => {
-                button.addEventListener("click", () => this.iSlideJump(button.getAttribute('jumpto')))
-            });
+            if (buttosItens) {
+                var stepsButtons = Array.from(buttosItens.querySelectorAll('span'))
+                stepsButtons.forEach(button => {
+                    button.addEventListener("click", () => this.iSlideJump(button.getAttribute('jumpto')))
+                });
+            }
         });
     }
 
