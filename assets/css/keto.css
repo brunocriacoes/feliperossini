@@ -251,6 +251,10 @@ s {
     }
 }
 
+.sliders>.container {
+    padding: 0;
+}
+
 .slider_crop {
     overflow-x: hidden;
     padding: 12px;
@@ -274,7 +278,7 @@ s {
     display: grid;
     grid-template-columns: 48px 1fr 48px;
     align-items: center;
-    margin: 48px 0;
+    /* margin: 48px 0; */
 }
 
 .slider>span {
