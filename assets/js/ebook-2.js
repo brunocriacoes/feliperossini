@@ -71,7 +71,7 @@ console.log('estoy aqui')
 
 
 
-function renderItem({ reviewer_name, reviewer_picture_url, text, url }) {
+function renderItem({ largura, gravatar, author, content }) {
     
 
 	return `
@@ -100,6 +100,8 @@ function renderItem({ reviewer_name, reviewer_picture_url, text, url }) {
 	var placeId = 'ChIJx10QDzL2zpQROVoah2YT61I'
 	var path = `./assets/json/ebook-2.json`
 	var data = await (await fetch(path)).json()
+
+    console.log(data['data'])
 
 	const options = {
 		btnNext: [document.querySelector('.js-next')],
