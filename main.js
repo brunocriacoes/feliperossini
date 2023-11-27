@@ -82,7 +82,7 @@ function renderItem({ reviewer_name, reviewer_picture_url, text, url }) {
 			768: 3,
 		}
 		,
-		autoPlay: true,
+		autoPlay: false,
 		delay: 3000
 	}
 	const $slider = document.querySelector('.js-slider-loop')

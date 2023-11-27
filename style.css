@@ -23,6 +23,7 @@ img {
     background-repeat: no-repeat;
     background-image:  url("/assets/images/bg.png");
     color: #FFF;
+    overflow: hidden
 }
 
 .banner>div a {

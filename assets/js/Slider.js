@@ -44,8 +44,9 @@ export default class Slider {
     }
 
     getDimentions() {
-        this.slideWidthIten = Math.floor(this.stage.offsetWidth / this.chunks) + Math.floor(this.gap / this.chunks)        
+        this.slideWidthIten = Math.floor(this.stage.offsetWidth / this.chunks) + Math.floor(this.gap / this.chunks)   
         this.slideWidth = this.slideWidthIten * this.chunks
+        console.log(this.slideWidth)     
     }
 
     getBreakPoint() {
