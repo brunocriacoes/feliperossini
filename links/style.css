@@ -61,7 +61,7 @@ span {
 i {
     color: #FFF;
     font-size: 22px;    
-    margin: 22px;
+    margin: 22px 12px;
 }
 
 div>section:last-child a {
