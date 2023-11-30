@@ -71,6 +71,7 @@ div>section:last-child a {
     line-height: 3em;
     background-color: #FFF;
     margin: 12px auto;
+    padding: 0 3em;
     border-radius: 12px;
     width: 99%;
     transition: width 0.05s ease-in-out;
